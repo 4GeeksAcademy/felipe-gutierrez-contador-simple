@@ -1,27 +1,60 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
 
 //create your first component
-const Home = () => {
+const Home = (props) => {
 	return (
-		<div className="text-center">
-            
+		<div className="">
+			<div className="row  row-gap-5 column-gap-5" >
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+				<div className="Logo col-lg-1 ms-4">
+					<button type="button" class="btn btn-lg btn-dark">
+
+						<span class="badge badge-dark"><FontAwesomeIcon icon={faClock} /></span>
+					</button>
+				</div>
+				<div className="col-lg-1 ms-2">
+					<button type="button" class="btn btn-lg btn-dark">
+						<span class="badge badge-dark ">{props.digitSix}</span>
+					</button>
+
+				</div>
+				<div className="col-lg-1">
+					<button type="button" class="btn btn-lg btn-dark">
+						<span class="badge badge-dark">{props.digitFive}</span>
+					</button>
+
+				</div>
+				<div className="col-lg-1">
+					<button type="button" class="btn btn-lg btn-dark">
+						<span class="badge badge-dark">{props.digitFour}</span>
+					</button>
+
+				</div>
+				<div className="col-lg-1">
+					<button type="button" class="btn btn-lg btn-dark">
+						<span class="badge badge-dark">{props.digitThree}</span>
+					</button>
+
+				</div>
+				<div className="col-lg-1">
+					<button type="button" class="btn btn-lg btn-dark">
+						<span class="badge badge-dark">{props.digitTwo}</span>
+					</button>
+
+				</div>
+				<div className="col-lg-1">
+					<button type="button" class="btn btn-lg btn-dark">
+						<span class="badge badge-dark">{props.digitOne}</span>
+					</button>
+
+				</div>
+			</div>
 		</div>
+
 	);
 };
 
