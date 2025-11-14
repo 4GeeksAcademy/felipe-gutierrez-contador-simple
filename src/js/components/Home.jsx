@@ -4,19 +4,18 @@ import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 
 
-//create your first component
+//create your first component 
 const Home = (props) => {
 	return (
 		<div className="">
-			<div className="row  row-gap-5 column-gap-5" >
-
-				<div className="Logo col-lg-1 ms-4">
+			<div className="row justify-content-center pe-4">
+				<div className="Logo col-lg-1 ">
 					<button type="button" class="btn btn-lg btn-dark">
 
 						<span class="badge badge-dark"><FontAwesomeIcon icon={faClock} /></span>
 					</button>
 				</div>
-				<div className="col-lg-1 ms-2">
+				<div className="col-lg-1 mx-5 ">
 					<button type="button" class="btn btn-lg btn-dark">
 						<span class="badge badge-dark ">{props.digitSix}</span>
 					</button>
@@ -28,7 +27,7 @@ const Home = (props) => {
 					</button>
 
 				</div>
-				<div className="col-lg-1">
+				<div className="col-lg-1 mx-5">
 					<button type="button" class="btn btn-lg btn-dark">
 						<span class="badge badge-dark">{props.digitFour}</span>
 					</button>
@@ -40,7 +39,7 @@ const Home = (props) => {
 					</button>
 
 				</div>
-				<div className="col-lg-1">
+				<div className="col-lg-1 mx-5">
 					<button type="button" class="btn btn-lg btn-dark">
 						<span class="badge badge-dark">{props.digitTwo}</span>
 					</button>
