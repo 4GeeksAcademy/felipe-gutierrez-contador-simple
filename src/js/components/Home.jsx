@@ -9,7 +9,7 @@ const Home = (props) => {
 	return (
 		<div className="">
 			<div className="row justify-content-center pe-4">
-				<div className="Logo col-lg-1 ">
+				<div className="col-lg-1 ">
 					<button type="button" class="btn btn-lg btn-dark">
 
 						<span class="badge badge-dark"><FontAwesomeIcon icon={faClock} /></span>
